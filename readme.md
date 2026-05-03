@@ -3,7 +3,7 @@
 <p align="center"> <img src="beacon.avif" width="420"/> </p>
 
 Beacon is a tool that makes test failures much easier to understand. Instead of just saying “this test failed,” it shows exactly what went wrong, 
-what values were compared, how they differ, and even the context around the failure—all in a clean, readable format. 
+what values were compared, how they differ, and even the context around the failure - all in a clean, readable format. 
 It automatically plugs into pytest, so when something breaks, the error message itself becomes a clear explanation of the problem, 
 almost like the test is documenting its own failure.
 
