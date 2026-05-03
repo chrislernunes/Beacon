@@ -20,9 +20,9 @@ almost like the test is documenting its own failure.
 
 A failing test should be a **self-documenting source of truth**. The moment a test breaks in CI or on a colleague's machine, the failure output alone should tell you:
 
-- **What** failed - the exact expression, with evaluated sub-expressions
-- **Why** it failed - a structured diff of the actual vs. expected values
-- **The intent** - author annotations attached at write-time, not buried in a comment
+- **What** failed — the exact expression, with evaluated sub-expressions
+- **Why** it failed — a structured diff of the actual vs. expected values
+- **The intent** — author annotations attached at write-time, not buried in a comment
 
 Standard `assert` output and even pytest's rewriting are often not enough. Beacon goes further.
 
@@ -192,6 +192,9 @@ llm_explain = false          # set true + OPENAI_API_KEY for AI explanations
 | `BEACON_SOURCE_CONTEXT_LINES` | int | Lines of context |
 | `BEACON_SHOW_DIFF` | bool | Show structured diffs |
 | `BEACON_THEME` | str | Pygments theme name |
+| `BEACON_OUTPUT_FORMATS` | JSON list | Output sinks, e.g. `["terminal", "json"]` |
+| `BEACON_JSON_REPORT_PATH` | str | JSONL report path |
+| `BEACON_HTML_REPORT_PATH` | str | HTML report path |
 | `BEACON_LLM_EXPLAIN` | bool | Enable LLM explanation |
 
 ---
@@ -248,6 +251,17 @@ ruff format src/ tests/
 
 # See all Beacon's own output (intentionally failing showcase tests)
 pytest tests/test_examples.py --run-examples -v
+```
+
+PowerShell uses a different environment-variable syntax from Bash/Zsh:
+
+```powershell
+$env:BEACON_OUTPUT_FORMATS='["json"]'
+pytest tests/test_examples.py --run-examples -v
+```
+
+```bash
+BEACON_OUTPUT_FORMATS='["json"]' pytest tests/test_examples.py --run-examples -v
 ```
 
 ---
