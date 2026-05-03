@@ -7,9 +7,11 @@ what values were compared, how they differ, and even the context around the fail
 It automatically plugs into pytest, so when something breaks, the error message itself becomes a clear explanation of the problem, 
 almost like the test is documenting its own failure.
 
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![pytest plugin](https://img.shields.io/badge/pytest-plugin-orange.svg)](https://docs.pytest.org)
-[![Rich](https://img.shields.io/badge/powered%20by-Rich-blueviolet)](https://github.com/Textualize/rich)
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.9+-blue.svg" />
+  <img src="https://img.shields.io/badge/pytest-plugin-orange.svg" />
+  <img src="https://img.shields.io/badge/powered%20by-Rich-blueviolet" />
+</p>
 
 ---
 
