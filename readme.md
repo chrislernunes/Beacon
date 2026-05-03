@@ -7,8 +7,6 @@ what values were compared, how they differ, and even the context around the fail
 It automatically plugs into pytest, so when something breaks, the error message itself becomes a clear explanation of the problem, 
 almost like the test is documenting its own failure.
 
-**Beautiful, self-documenting test failure messages — a modern successor to Two Sigma's `marbles` library.**
-
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![pytest plugin](https://img.shields.io/badge/pytest-plugin-orange.svg)](https://docs.pytest.org)
 [![Rich](https://img.shields.io/badge/powered%20by-Rich-blueviolet)](https://github.com/Textualize/rich)
@@ -19,9 +17,9 @@ almost like the test is documenting its own failure.
 
 A failing test should be a **self-documenting source of truth**. The moment a test breaks in CI or on a colleague's machine, the failure output alone should tell you:
 
-- **What** failed — the exact expression, with evaluated sub-expressions
-- **Why** it failed — a structured diff of the actual vs. expected values
-- **The intent** — author annotations attached at write-time, not buried in a comment
+- **What** failed - the exact expression, with evaluated sub-expressions
+- **Why** it failed - a structured diff of the actual vs. expected values
+- **The intent** - author annotations attached at write-time, not buried in a comment
 
 Standard `assert` output and even pytest's rewriting are often not enough. Beacon goes further.
 
