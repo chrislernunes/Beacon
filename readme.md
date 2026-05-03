@@ -32,14 +32,14 @@ Standard `assert` output and even pytest's rewriting are often not enough. Beaco
 
 | Feature | Description |
 |---|---|
-| 🎨 **Rich terminal output** | Colours, syntax highlighting, clean diffs, tables |
-| 🔍 **AST introspection** | Full expression breakdown with evaluated sub-expressions |
-| 📝 **Author annotations** | `@beacon.note(...)` decorator and `beacon.annotate(...)` context manager |
-| 📊 **Smart diffs** | Structured diffs for dicts, DataFrames, numpy arrays, strings |
-| 🔌 **pytest plugin** | Auto-activates on install — zero configuration needed |
-| ⚡ **Zero overhead** | No cost on passing tests |
-| 🔧 **Rich assertion helpers** | `assert_equal`, `assert_frame_equal`, `assert_raises`, and more |
-| 🏗️ **Fully typed** | `mypy --strict` clean |
+| **Rich terminal output** | Colours, syntax highlighting, clean diffs, tables |
+| **AST introspection** | Full expression breakdown with evaluated sub-expressions |
+| **Author annotations** | `@beacon.note(...)` decorator and `beacon.annotate(...)` context manager |
+| **Smart diffs** | Structured diffs for dicts, DataFrames, numpy arrays, strings |
+| **pytest plugin** | Auto-activates on install — zero configuration needed |
+| **Zero overhead** | No cost on passing tests |
+| **Rich assertion helpers** | `assert_equal`, `assert_frame_equal`, `assert_raises`, and more |
+| **Fully typed** | `mypy --strict` clean |
 
 ---
 
