@@ -8,9 +8,10 @@ It automatically plugs into pytest, so when something breaks, the error message 
 almost like the test is documenting its own failure.
 
 <p align="center">
+  <img src="https://img.shields.io/badge/version-v1-111111.svg" />
   <img src="https://img.shields.io/badge/python-3.9+-blue.svg" />
   <img src="https://img.shields.io/badge/pytest-plugin-orange.svg" />
-  <img src="https://img.shields.io/badge/powered%20by-Rich-blueviolet" />
+  <img src="https://img.shields.io/badge/Rich-terminal-blueviolet" />
 </p>
 
 ---
