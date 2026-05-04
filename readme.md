@@ -1,6 +1,8 @@
 <h1 align="center">Beacon</h1>
 
-<p align="center"> <img src="beacon.png" width="420"/> </p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/chrislernunes/beacon/main/beacon.png" width="420" alt="Beacon logo" />
+</p>
 
 Beacon is a tool that makes test failures much easier to understand. Instead of just saying “this test failed,” it shows exactly what went wrong, 
 what values were compared, how they differ, and even the context around the failure - all in a clean, readable format. 
@@ -46,7 +48,7 @@ Standard `assert` output and even pytest's rewriting are often not enough. Beaco
 ## Installation
 
 ```bash
-pip install beacon
+pip install beacon-proximity
 ```
 
 That's it. The pytest plugin **auto-activates** — no `conftest.py` changes needed.
@@ -54,10 +56,10 @@ That's it. The pytest plugin **auto-activates** — no `conftest.py` changes nee
 ### Optional extras
 
 ```bash
-pip install beacon[numpy]    # numpy array diffs
-pip install beacon[pandas]   # DataFrame diffs
-pip install beacon[llm]      # LLM-powered failure explanation (experimental)
-pip install beacon[dev]      # development tools
+pip install "beacon-proximity[numpy]"    # numpy array diffs
+pip install "beacon-proximity[pandas]"   # DataFrame diffs
+pip install "beacon-proximity[llm]"      # LLM-powered failure explanation (experimental)
+pip install "beacon-proximity[dev]"      # development tools
 ```
 
 ---
@@ -192,9 +194,6 @@ llm_explain = false          # set true + OPENAI_API_KEY for AI explanations
 | `BEACON_SOURCE_CONTEXT_LINES` | int | Lines of context |
 | `BEACON_SHOW_DIFF` | bool | Show structured diffs |
 | `BEACON_THEME` | str | Pygments theme name |
-| `BEACON_OUTPUT_FORMATS` | JSON list | Output sinks, e.g. `["terminal", "json"]` |
-| `BEACON_JSON_REPORT_PATH` | str | JSONL report path |
-| `BEACON_HTML_REPORT_PATH` | str | HTML report path |
 | `BEACON_LLM_EXPLAIN` | bool | Enable LLM explanation |
 
 ---
@@ -251,17 +250,6 @@ ruff format src/ tests/
 
 # See all Beacon's own output (intentionally failing showcase tests)
 pytest tests/test_examples.py --run-examples -v
-```
-
-PowerShell uses a different environment-variable syntax from Bash/Zsh:
-
-```powershell
-$env:BEACON_OUTPUT_FORMATS='["json"]'
-pytest tests/test_examples.py --run-examples -v
-```
-
-```bash
-BEACON_OUTPUT_FORMATS='["json"]' pytest tests/test_examples.py --run-examples -v
 ```
 
 ---
