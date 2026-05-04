@@ -1,6 +1,6 @@
 <h1 align="center">Beacon</h1>
 
-<p align="center"> <img src="beacon.avif" width="420"/> </p>
+<p align="center"> <img src="beacon.png" width="420"/> </p>
 
 Beacon is a tool that makes test failures much easier to understand. Instead of just saying “this test failed,” it shows exactly what went wrong, 
 what values were compared, how they differ, and even the context around the failure - all in a clean, readable format. 
